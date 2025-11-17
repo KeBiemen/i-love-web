@@ -1,0 +1,99 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    /* 100h full screenheight */
+    min-height: 100vh;
+    background-image: url(kat.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+    background-color: white;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0.1) ;
+
+    ul {
+        width: 100%;
+        list-style: none;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    li {
+        height: 50px;
+
+    }
+
+    a {
+        height: 100%;
+        padding: 0 30px;
+         /* underline gone */
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: black;
+
+    }
+
+    a:hover{
+        background-color: #f0f0f0;
+    }
+
+  
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0px 10px rgb(0, 0, 0.1) ;
+display: none;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-start;
+
+li{
+    width: 100%;
+}
+
+a{
+    width: 100%;
+}
+
+}
+
+ h1 {
+
+  color: rgb(209, 81, 124);
+  font-size: 180px;
+  font-family: "Fugaz One", sans-serif;
+  font-weight: bold;
+ padding-top: 10%;
+  
+}
+
+
+
+h1{ 
+position: relative;
+top: 0;
+animation: bounce 0.8s ease infinite alternate;
+}
+
+@keyframes bounce {
+100% {
+top: -.50rem;
+}
+}
+
