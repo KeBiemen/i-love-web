@@ -1,0 +1,82 @@
+.email {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+  appearance: none;
+  padding: 0.5em;
+  border-radius: 0.33em;
+
+  border: solid 0.1em grey;
+  margin-bottom: 5em;
+
+  &:focus {
+    border-color: blue;
+    border-radius: 0;
+    outline: none;
+    border-radius: 0.33em;
+  }
+
+  &:valid {
+    border-color: rgb(79, 240, 79);
+  }
+
+  &:user-invalid {
+    border-color: red;
+  }
+}
+
+.leeftijd {
+    display: block;
+}
+
+.switch {
+  appearance: none;
+  width: 4em;
+  aspect-ratio: 2/1;
+  margin: 0;
+  background-color: gray;
+  border-radius: 1em;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 2em;
+    aspect-ratio: 1;
+    background-color: red;
+    border-radius: inherit;
+
+    transition: 0.3s;
+  }
+
+  &:checked::after {
+    background-color: green;
+    translate: 2em;
+  }
+
+}
+
+.filter {
+  position: relative;
+  top: 1em;
+
+
+  label {
+  border: 2px solid;
+  border-radius: 15px;
+  padding: 0.5em;
+  
+  
+  &:active {
+    background-color: black;
+  }
+}
+
+input[type="radio"]:checked + label {
+  background-color: rgb(54, 102, 74);
+}
+}
+

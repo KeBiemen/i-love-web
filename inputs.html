@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="inputs.css" />
+  </head>
+  <body>
+    <form>
+      <label>
+        email <input class="email" type="email" placeholder="een @ en zo..." required />
+      </label>
+
+      		<label>
+				<input class="switch" type="checkbox"> switch
+			</label>
+
+        <label class="leeftijd" for="leeftijd">leeftijd <input id="leeftijd" type="number" value="4" step="10" /></label> 
+            
+    </form>
+
+
+    <form class="filter">
+  <input type="radio" id="Amsterdam" name="filters" hidden/>
+  <label class="filternaam" for="Amsterdam">Amsterdam</label>
+
+  <input type="radio" id="Utrecht" name="filters" hidden/>
+  <label class="filternaam" for="Utrecht">Utrecht</label>
+
+   <input type="radio" id="Maastricht" name="filters" hidden/>
+  <label class="filternaam" for="Maastricht">Maastricht</label>
+
+   <input type="radio" id="Haarlem" name="filters" hidden/>
+  <label class="filternaam" for="Haarlem">Haarlem</label>
+  
+</form>
+
+  </body>
+</html>
